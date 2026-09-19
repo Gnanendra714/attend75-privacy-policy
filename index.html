@@ -36,11 +36,18 @@
             background: #F0F4FA;
             color: #66758C;
             line-height: 1.7;
+            padding-top: 16px;
         }
 
         /* ==========================================
-           HEADER
+           HEADER (FLOATING CARD STYLE)
         ========================================== */
+
+        .hero-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
 
         .hero {
             background:
@@ -54,74 +61,72 @@
 
             color: white;
 
-            padding:
-                70px 20px
-                85px;
+            padding: 28px 28px 32px;
 
-            border-radius:
-                0 0 42px 42px;
+            border-radius: 28px;
 
             box-shadow:
                 0 8px 30px rgba(10, 36, 99, 0.15);
         }
 
-        .hero-content {
-            max-width: 1000px;
-            margin: 0 auto;
+        .hero-top-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
         }
 
         .badge {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
 
-            padding:
-                7px 16px;
+            padding: 6px 14px;
 
-            border:
-                1px solid
-                rgba(255, 255, 255, 0.28);
-
+            border: 1px solid rgba(255, 255, 255, 0.20);
             border-radius: 50px;
 
-            background:
-                rgba(255, 255, 255, 0.10);
+            background: rgba(255, 255, 255, 0.12);
 
-            color: #BDEFFF;
+            color: #42C2FF;
 
-            font-size: 13px;
-            font-weight: 600;
+            font-size: 11px;
+            font-weight: 700;
 
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
+        }
 
-            margin-bottom: 22px;
+        .badge-dot {
+            width: 7px;
+            height: 7px;
+            background-color: #00B4D8;
+            border-radius: 50%;
         }
 
         .hero h1 {
-            font-size: clamp(36px, 6vw, 58px);
-            line-height: 1.1;
+            font-size: clamp(28px, 5vw, 36px);
+            line-height: 1.2;
             font-weight: 700;
-            margin-bottom: 12px;
+            margin-bottom: 6px;
         }
 
         .hero p {
-            color:
-                rgba(255, 255, 255, 0.82);
+            color: rgba(255, 255, 255, 0.80);
 
-            font-size: 17px;
+            font-size: 14px;
             max-width: 700px;
         }
 
         /* ==========================================
-           MAIN
+           MAIN CONTENT
         ========================================== */
 
         .container {
             max-width: 1000px;
 
-            margin:
-                -45px auto 0;
+            margin: 16px auto 0;
 
-            padding:
-                0 18px 60px;
+            padding: 0 16px 60px;
 
             position: relative;
         }
@@ -129,41 +134,42 @@
         .intro {
             background: white;
 
-            border-radius: 24px;
+            border-radius: 20px;
 
-            padding: 30px;
+            padding: 24px;
 
-            margin-bottom: 18px;
+            margin-bottom: 16px;
 
             box-shadow:
-                0 8px 30px
-                rgba(10, 36, 99, 0.07);
+                0 6px 24px
+                rgba(10, 36, 99, 0.055);
         }
 
         .intro h2 {
             color: #0A2463;
 
-            font-size: 25px;
+            font-size: 22px;
 
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .intro p {
-            font-size: 16px;
+            font-size: 14px;
+            line-height: 1.6;
         }
 
         /* ==========================================
-           POLICY CARD
+           POLICY CARDS
         ========================================== */
 
         .section {
             background: white;
 
-            border-radius: 24px;
+            border-radius: 20px;
 
-            padding: 30px;
+            padding: 24px;
 
-            margin-bottom: 18px;
+            margin-bottom: 16px;
 
             box-shadow:
                 0 6px 24px
@@ -173,15 +179,17 @@
         .section h2 {
             color: #0A2463;
 
-            font-size: 21px;
+            font-size: 17px;
+            font-weight: 700;
 
-            margin-bottom: 13px;
+            margin-bottom: 10px;
 
             line-height: 1.35;
         }
 
         .section p {
-            margin-bottom: 14px;
+            font-size: 14px;
+            margin-bottom: 12px;
         }
 
         .section p:last-child {
@@ -189,11 +197,11 @@
         }
 
         .section ul {
-            margin:
-                10px 0 15px 22px;
+            margin: 10px 0 15px 22px;
         }
 
         .section li {
+            font-size: 14px;
             margin-bottom: 5px;
         }
 
@@ -226,22 +234,22 @@
 
             color: white;
 
-            border-radius: 24px;
+            border-radius: 20px;
 
-            padding: 30px;
+            padding: 24px;
 
-            margin-bottom: 18px;
+            margin-bottom: 16px;
         }
 
         .contact-box h2 {
-            font-size: 22px;
-            margin-bottom: 10px;
+            font-size: 18px;
+            margin-bottom: 8px;
         }
 
         .contact-box p {
-            color:
-                rgba(255, 255, 255, 0.82);
+            color: rgba(255, 255, 255, 0.82);
 
+            font-size: 14px;
             margin-bottom: 8px;
         }
 
@@ -256,12 +264,11 @@
         footer {
             text-align: center;
 
-            padding:
-                10px 20px 30px;
+            padding: 10px 20px 30px;
 
             color: #7A879A;
 
-            font-size: 13px;
+            font-size: 12px;
         }
 
         footer strong {
@@ -274,49 +281,48 @@
 
         @media (max-width: 600px) {
 
-            .hero {
-                padding:
-                    50px 20px
-                    70px;
+            body {
+                padding-top: 12px;
+            }
 
-                border-radius:
-                    0 0 32px 32px;
+            .hero {
+                padding: 20px 20px 24px;
+
+                border-radius: 24px;
             }
 
             .hero h1 {
-                font-size: 36px;
+                font-size: 26px;
             }
 
             .hero p {
-                font-size: 15px;
+                font-size: 13px;
             }
 
             .container {
-                margin-top: -35px;
-
-                padding:
-                    0 14px 40px;
+                margin-top: 12px;
+                padding: 0 12px 40px;
             }
 
             .intro,
             .section,
             .contact-box {
-                padding: 22px;
+                padding: 20px;
 
-                border-radius: 20px;
+                border-radius: 18px;
             }
 
             .intro h2 {
-                font-size: 22px;
+                font-size: 20px;
             }
 
             .section h2 {
-                font-size: 18px;
+                font-size: 16px;
             }
 
             .section p,
             .section li {
-                font-size: 14px;
+                font-size: 13.5px;
             }
         }
 
@@ -326,15 +332,20 @@
 <body>
 
     <!-- ==========================================
-         HERO
+         HERO (CARD STYLE MATCHING APP HEADER)
     ========================================== -->
 
-    <header class="hero">
+    <header class="hero-wrapper">
 
-        <div class="hero-content">
+        <div class="hero">
 
-            <div class="badge">
-                ATTEND75 • PRIVACY
+            <div class="hero-top-row">
+
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    PREFERENCES
+                </div>
+
             </div>
 
             <h1>
@@ -342,10 +353,7 @@
             </h1>
 
             <p>
-                Learn how Attend75 handles information,
-                local device data, timetable scanning,
-                notifications, advertising, and
-                third-party services.
+                Attend75 — How Attend75 handles your data
             </p>
 
         </div>
@@ -369,16 +377,7 @@
             </h2>
 
             <p>
-                Your privacy matters. This Privacy Policy
-                explains how Attend75 handles information
-                when you use the application.
-            </p>
-
-            <p>
-                <span class="highlight">
-                    Effective date:
-                </span>
-                September 19, 2026
+                Your privacy matters. This policy explains what information Attend75 uses, where it is stored, and how third-party services such as advertising may process information.
             </p>
 
         </section>
@@ -393,17 +392,15 @@
             </h2>
 
             <p>
-                Attend75 is a personal attendance and
-                timetable management application designed
-                to help students manage attendance records,
-                subjects, timetables, attendance targets,
-                reminders, reports, and related study
-                information.
+                Attend75 is a personal attendance and timetable management application.
             </p>
 
             <p>
-                Attend75 does not require you to create an
-                account or log in to use its core features.
+                The app is designed to help students manage attendance records, subjects, timetables, attendance targets, reminders, reports, and related study information.
+            </p>
+
+            <p>
+                Attend75 does not require you to create an account or log in to use its core features.
             </p>
 
         </section>
@@ -418,8 +415,7 @@
             </h2>
 
             <p>
-                You may choose to enter information into
-                Attend75, including:
+                You may enter information into Attend75 such as:
             </p>
 
             <ul>
@@ -434,9 +430,7 @@
             </ul>
 
             <p>
-                This information is primarily stored locally
-                on your device for the application's
-                functionality.
+                This information is primarily stored locally on your device for the app's functionality.
             </p>
 
         </section>
@@ -451,28 +445,19 @@
             </h2>
 
             <p>
-                Attend75 uses local device storage for
-                information required by the application.
+                Attend75 uses local device storage for information required by the app.
             </p>
 
             <p>
-                This may include profile information,
-                subjects, attendance records, timetable
-                information, notification preferences,
-                attendance targets, reports, and other
-                application settings.
+                This may include your profile information, subjects, attendance records, timetable information, notification preferences, attendance targets, reports, and other app settings.
             </p>
 
             <p>
-                Attend75 does not require an Attend75 account
-                or an Attend75 cloud server for these core
-                features.
+                Attend75 does not require an Attend75 account or an Attend75 cloud server for these core features.
             </p>
 
             <p>
-                If you uninstall Attend75 or clear its
-                application data, locally stored information
-                may be deleted by Android.
+                If you uninstall the app or clear its application data, locally stored information may be deleted by Android.
             </p>
 
         </section>
@@ -487,22 +472,19 @@
             </h2>
 
             <p>
-                Attend75 may request access to your device
-                camera when you choose to scan a timetable.
+                Attend75 may request access to your device camera when you choose to scan a timetable.
             </p>
 
             <p>
-                Camera access is used for the timetable
-                scanning feature and is not used continuously
-                or in the background.
+                The camera is used only after you choose to use the timetable scanning feature.
             </p>
 
             <p>
-                Images captured for timetable scanning are
-                used to perform the requested timetable
-                recognition process. Attend75 does not
-                intentionally upload timetable photographs
-                to an Attend75 server.
+                Attend75 does not use the camera continuously or in the background.
+            </p>
+
+            <p>
+                Images captured for timetable scanning are used to perform the requested timetable recognition process. Attend75 does not intentionally upload your timetable photographs to an Attend75 server.
             </p>
 
         </section>
@@ -517,20 +499,15 @@
             </h2>
 
             <p>
-                If you choose to select a timetable image from
-                your device gallery, Attend75 accesses the
-                image you select for the purpose of timetable
-                scanning.
+                If you choose to select a timetable image from your device gallery, Attend75 accesses the image you select for the purpose of timetable scanning.
             </p>
 
             <p>
-                Attend75 does not intentionally upload selected
-                timetable images to an Attend75 server.
+                Attend75 does not intentionally upload selected timetable images to an Attend75 server.
             </p>
 
             <p>
-                You remain in control of which image you
-                choose to provide to the application.
+                You remain in control of which image you choose to provide to the app.
             </p>
 
         </section>
@@ -545,20 +522,15 @@
             </h2>
 
             <p>
-                Attend75 uses optical character recognition
-                (OCR) technology to help identify timetable
-                information from scanned timetable images.
+                Attend75 uses optical character recognition (OCR) technology to help identify timetable information from scanned timetable images.
             </p>
 
             <p>
-                OCR may be used to recognize information such
-                as days, times, subjects, and room details.
+                The OCR functionality is used to recognize information such as days, times, subjects, and room details.
             </p>
 
             <p>
-                The OCR processing used by Attend75 is
-                performed on the device using the integrated
-                machine-learning functionality.
+                The OCR processing used by Attend75 is performed on the device using the application's integrated machine-learning functionality.
             </p>
 
         </section>
@@ -573,22 +545,15 @@
             </h2>
 
             <p>
-                Attend75 can provide optional notifications
-                such as class reminders, attendance-related
-                reminders, daily summaries, missed-attendance
-                notifications, recovery guidance, and target
-                guidance.
+                Attend75 can provide optional notifications such as class reminders, attendance-related reminders, daily summaries, missed-attendance notifications, recovery guidance, and target guidance.
             </p>
 
             <p>
-                Notification preferences are controlled by you
-                through the application's Settings.
+                Notification preferences are controlled by you through the app's Settings.
             </p>
 
             <p>
-                Android notification permission may be
-                requested when required by your version of
-                Android.
+                Android notification permission may be requested when required by your version of Android.
             </p>
 
         </section>
@@ -603,30 +568,23 @@
             </h2>
 
             <p>
-                Attend75 uses Google Mobile Ads (AdMob) to
-                display advertisements.
+                Attend75 uses Google Mobile Ads (AdMob) to display advertisements.
             </p>
 
             <p>
-                Depending on the applicable configuration,
-                consent choices, and regional requirements,
-                Google's Mobile Ads SDK may process information
-                such as IP address, interactions with the app
-                and advertisements, diagnostic information,
-                and device or advertising identifiers.
+                Google's Mobile Ads SDK may collect information such as the device IP address, user interactions with the app and advertisements, diagnostic information, and device or advertising identifiers, depending on the SDK configuration and applicable privacy settings.
             </p>
 
             <p>
-                Such information may be processed for purposes
-                including advertising, analytics, fraud
-                prevention, security, and related service
-                operations.
+                This information may be used for purposes including advertising, analytics, fraud prevention, security, and service improvement.
             </p>
 
             <p>
-                Google's applicable privacy policies and
-                documentation govern Google's processing of
-                information through its advertising services.
+                The data practices of Google Mobile Ads are governed by Google's applicable privacy and advertising policies.
+            </p>
+
+            <p>
+                You can manage certain advertising and privacy choices through your device settings and any consent mechanisms provided by Attend75 where required.
             </p>
 
         </section>
@@ -641,26 +599,19 @@
             </h2>
 
             <p>
-                Attend75 does not sell your personal
-                information.
+                Attend75 does not sell your personal information.
             </p>
 
             <p>
-                Information may be processed by third-party
-                service providers when required for application
-                functionality or advertising.
+                Information may be processed by third-party service providers when required for app functionality or advertising.
             </p>
 
             <p>
-                The principal third-party service currently
-                integrated into Attend75 is Google Mobile Ads
-                (AdMob) for advertising.
+                The main third-party service currently integrated into Attend75 is Google Mobile Ads (AdMob) for advertising.
             </p>
 
             <p>
-                Third-party services may process information
-                according to their own privacy policies,
-                terms, and applicable laws.
+                Third-party services may process information according to their own privacy policies and applicable laws.
             </p>
 
         </section>
@@ -675,21 +626,15 @@
             </h2>
 
             <p>
-                Attend75 is designed so that information used
-                by its core features is primarily maintained
-                on your device.
+                Attend75 is designed to keep the information used by its core features on your device.
             </p>
 
             <p>
-                Network communication used by third-party
-                services, such as advertising SDKs, may
-                transmit information according to those
-                services' security and privacy practices.
+                Network communication used by third-party services such as advertising SDKs may transmit information according to those services' security and privacy practices.
             </p>
 
             <p>
-                No method of electronic storage or transmission
-                can be guaranteed to be completely secure.
+                No method of electronic storage or transmission can be guaranteed to be completely secure.
             </p>
 
         </section>
@@ -704,26 +649,19 @@
             </h2>
 
             <p>
-                You can choose whether to use optional features
-                such as timetable scanning and notifications.
+                You can choose whether to use optional features such as timetable scanning and notifications.
             </p>
 
             <p>
-                You can manage application permissions through
-                Android device settings.
+                You can also manage app permissions through Android device settings.
             </p>
 
             <p>
-                You may remove locally stored Attend75
-                information by clearing the application's data
-                or uninstalling the application, subject to
-                Android's normal device behavior.
+                You may remove locally stored Attend75 information by clearing the app's data or uninstalling the application, subject to Android's normal device behavior.
             </p>
 
             <p>
-                Advertising and related privacy choices may
-                also be available through your device settings
-                and applicable consent mechanisms.
+                Advertising and related privacy choices may also be available through your device settings and applicable consent mechanisms.
             </p>
 
         </section>
@@ -738,21 +676,15 @@
             </h2>
 
             <p>
-                Attend75 is intended as a general-purpose
-                student attendance and timetable application.
+                Attend75 is intended as a general-purpose student attendance and timetable application.
             </p>
 
             <p>
-                Attend75 does not knowingly request children
-                to create an Attend75 account because the app
-                does not require an account or login.
+                Attend75 does not knowingly request children to provide personal information through an Attend75 account because the app does not require an account or login.
             </p>
 
             <p>
-                If applicable laws or store requirements impose
-                additional obligations based on a user's age
-                or location, Attend75 will follow those
-                applicable requirements.
+                If applicable laws impose additional requirements based on the age of a user or the country in which the app is used, Attend75 will comply with those requirements.
             </p>
 
         </section>
@@ -767,21 +699,15 @@
             </h2>
 
             <p>
-                Attend75 may use third-party technologies and
-                services to provide specific functionality.
+                Attend75 may use third-party technologies and services to provide specific functionality.
             </p>
 
             <p>
-                The principal third-party advertising service
-                currently used by Attend75 is Google Mobile Ads
-                (AdMob).
+                These services may have their own privacy policies and terms.
             </p>
 
             <p>
-                Third-party services may have their own privacy
-                policies and terms. You should review the
-                applicable policies of those services for
-                additional information about their practices.
+                The principal third-party advertising service currently used by Attend75 is Google Mobile Ads (AdMob).
             </p>
 
         </section>
@@ -796,22 +722,15 @@
             </h2>
 
             <p>
-                This Privacy Policy may be updated from time
-                to time to reflect changes to Attend75,
-                applicable services, legal requirements, or
-                privacy practices.
+                This Privacy Policy may be updated from time to time to reflect changes to Attend75, applicable services, legal requirements, or privacy practices.
             </p>
 
             <p>
-                When important changes are made, the updated
-                policy will be made available through the app
-                and this public Privacy Policy page.
+                When important changes are made, the updated policy will be made available through the app and the public privacy policy page.
             </p>
 
             <p>
-                The effective date shown at the beginning of
-                this policy indicates when the current version
-                became effective.
+                The date shown below indicates when this policy was last updated.
             </p>
 
         </section>
@@ -826,10 +745,11 @@
             </h2>
 
             <p>
-                If you have questions, concerns, or requests
-                regarding this Privacy Policy or Attend75's
-                privacy practices, you can contact the
-                developer at:
+                If you have questions, concerns, or requests regarding this Privacy Policy or Attend75's privacy practices, please contact the developer using the contact information provided on the official Attend75 privacy policy page.
+            </p>
+
+            <p>
+                Developer contact:
             </p>
 
             <p>
